@@ -15,7 +15,7 @@ export default function App() {
   const login = (email, password) => {
     // Try to login....
 
-    fetch("http://localhost:3001/auth/login", {
+    fetch("https://todo-application-bdvl.onrender.com/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ export default function App() {
   const newOTP = (email, password, otpcode) => {
     // Try to enterOTP....
 
-    fetch("http://localhost:3001/verify-otp", {
+    fetch("https://todo-application-bdvl.onrender.com/verify-otp", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -65,7 +65,7 @@ export default function App() {
   };
 
   const signup = (name, email, password) => {
-    fetch("http://localhost:3001/auth/signup", {
+    fetch("https://todo-application-bdvl.onrender.com/auth/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -85,7 +85,7 @@ export default function App() {
   };
 
   const addTodo = (title, description) => {
-    fetch("http://localhost:3001/todo/add", {
+    fetch("https://todo-application-bdvl.onrender.com/todo/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -107,7 +107,7 @@ export default function App() {
 
   const fetchAllTodos = () => {
     // if user doesn't exist then go back
-    fetch("http://localhost:3001/todo/get", {
+    fetch("https://todo-application-bdvl.onrender.com/todo/get", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -128,7 +128,7 @@ export default function App() {
   const deleteTodos = (todoId) => {
     // Ask for confirmation to delete or not
 
-    fetch(`http://localhost:3001/todo/delete/${todoId}`, {
+    fetch(`https://todo-application-bdvl.onrender.com/todo/delete/${todoId}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -148,7 +148,7 @@ export default function App() {
   };
 
   const markAsComplete = (todoId) => {
-    fetch(`http://localhost:3001/todo/markAscomplete/${todoId}`, {
+    fetch(`https://todo-application-bdvl.onrender.com/todo/markAscomplete/${todoId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
