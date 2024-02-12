@@ -1,0 +1,91 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+.container-home {
+  background-color: #69bfb4;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  background-image: url("./image/pen-home.avif");
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+.container-4 {
+  margin: auto;
+  height: auto;
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.get {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping */
+  gap: 20px;
+  justify-content: center;
+  margin: auto;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow-wrap: break-word; /* Wrap words if they exceed the container's width */
+  height: auto;
+  max-width: 100%;
+  margin-top: 35px;
+}
+
+.container-3 div {
+  margin-bottom: 20px;
+  box-decoration-break: 20px;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  padding: 10px 40px;
+  background-color: #007bff;
+  color: #f0f6ea;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+textarea {
+  height: 70px;
+  width: 300px;
+}
+
+.todo-item {
+  margin-bottom: 10px;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+}
+
+.input-title {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.get-item {
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  border: 1px solid black;
+}

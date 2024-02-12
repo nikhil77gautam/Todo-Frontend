@@ -1,0 +1,67 @@
+.Main-container-signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./image/5-Tools-That-Will-Make-Your-Inbound-Marketing-Easier.png");
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+.container-2 {
+  background-color: #f2f2f2;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.underline-2 {
+  width: 50px;
+  height: 2px;
+  background-color: #333;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 97%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
