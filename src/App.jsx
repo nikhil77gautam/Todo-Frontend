@@ -148,14 +148,17 @@ export default function App() {
   };
 
   const markAsComplete = (todoId) => {
-    fetch(`https://todo-application-bdvl.onrender.com/todo/markAscomplete/${todoId}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: user.token,
-      },
-      body: JSON.stringify({ completed: true }),
-    })
+    fetch(
+      `https://todo-application-bdvl.onrender.com/todo/markAscomplete/${todoId}`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: user.token,
+        },
+        body: JSON.stringify({ completed: true }),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.success === false) {
